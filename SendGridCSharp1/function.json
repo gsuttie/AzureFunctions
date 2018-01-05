@@ -1,0 +1,19 @@
+{
+  "bindings": [
+    {
+      "type": "queueTrigger",
+      "name": "order",
+      "direction": "in",
+      "queueName": "samples-orders-csharp"
+    },
+    {
+      "type": "sendGrid",
+      "name": "$return",
+      "direction": "out",
+      "apiKey": "SendGridAZure",
+      "from": "Azure Functions <samples@functions.com>",
+      "to": "gsuttie2001@gmail.com"
+    }
+  ],
+  "disabled": false
+}
